@@ -8,9 +8,11 @@ This tool shows when your friends became your friend in VRChat, by using VRChat 
 4. See generated file named VRChat\_Friend\_History.txt.
 
 # Output file example
-2018-05-11T17:53:08.648Z username\_of\_your\_1st\_friend\_in\_vrchat
-2018-05-11T18:24:14.295Z username\_of\_your\_2nd\_friend\_in\_vrchat
+```
+2018-05-11T17:53:08.648Z username_of_your_1st_friend_in_vrchat
+2018-05-11T18:24:14.295Z username_of_your_2nd_friend_in_vrchat
 ...
+```
 
 # Build
 In case you want to build the exe by yourself
@@ -21,4 +23,4 @@ In case you want to build the exe by yourself
 4. Find exe file in dist directory
 
 # License
-These codes are licensed under MIT License. See LICENSE file for details.
+These codes are licensed under MIT License. See [LICENSE](https://github.com/sunasaji/VRChat_Friend_History/blob/master/LICENSE) for details.
