@@ -1,5 +1,7 @@
 # Introduction 
-This tool shows when your friends became your friend in VRChat, by using VRChat moderation API.
+This tool shows when your friends became your friend in VRChat, by using VRChat moderation API. Some friends might not be displayed. If you mute&unmute friends, the date and time would be used.
+
+English | [Japanese](https://github.com/sunasaji/VRChat_Friend_History/blob/master/README-ja.md)
 
 # Getting Started
 1. Download zip file at [release](https://github.com/sunasaji/VRChat_Friend_History/releases) and extract it, or prepare Python 3.7.x and clone this repository.
