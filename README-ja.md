@@ -1,21 +1,16 @@
 # はじめに
-VRChatのフレンドになった日時とユーザ名をテキストに書き出すツールです。VRChat moderation APIを使っています。全てのフレンド名は取り出せない場合があるのでご留意ください。またミュート/アンミュート操作をした場合、その日時が出力されます。
+VRChat内にテキストメッセージを送るためのツールです。VRChat message APIを使っています。
 
-[English](https://github.com/sunasaji/VRChat_Friend_History/blob/master/README.md) | Japanese
+[English](https://github.com/sunasaji/VRChat_message_sender/blob/master/README.md) | Japanese
 
 # 使い方
-1. リリース [release](https://github.com/sunasaji/VRChat_Friend_History/releases) からZIP をダウンロードして解凍するか Python3.7.x を入れてソースをダウンロードします。
-
+1. リリース [release](https://github.com/sunasaji/VRChat_message_sender/releases) からZIP をダウンロードして解凍するか Python3.7.x を入れてソースをダウンロードします。
 2. `credential.json` を開き `USERNAME` を自分の VRChat ユーザ名に置き換え, `PASSWORD` を自分の VRChat パスワードに置き換えます。
-
-3. `VRChat_Friend_History.exe` またはPythonスクリプトを実行します。
-
-4. `VRChat_Friend_History.txt` が生成されるので開きます。
-
-# 出力例
+3. フォルダのアドレスバーを選択して `cmd` を入力してEnterを押します。するとコマンドプロンプトが開きます。
+3. メッセージを送りたいフレンドのユーザIDを [VRChat](https://vrchat.net) で確認します。ログインして右側に出てくるフレンドアイコンをクリックしてアドレスバーを見ます。ユーザIDは `usr_` から始まる文字列です。たとえば `usr_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx` のような文字列です。
+4. `VRChat_message_sender USER_ID_OF_TARGET_USER "MESSAGE"` を実行します。 `USER_ID_OF_TARGET_USER` には確認したユーザIDを入力し、 `MESSAGE` には送りたいメッセージを書きます。例：
 ```
-2018-05-11T17:53:08.648Z 1人目のフレンドさんのユーザ名
-2018-05-11T18:24:14.295Z 2人目のフレンドさんのユーザ名
+VRChat_message_sender usr_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx "テストメッセージ"
 ```
 
 # 自分でビルドする場合
@@ -23,8 +18,8 @@ VRChatのフレンドになった日時とユーザ名をテキストに書き�
 1. Python3.7.x をインストールする
 2. `pip install requests` を実行
 3. `pip install pyinstaller` を実行
-4. `pyinstaller VRChat_Friend_History.py --onefile --noconsole` を実行
+4. `pyinstaller VRChat_message_sender.py --onefile` を実行
 5. dist フォルダに exe が生成される
 
 # ライセンス
-MIT License です。[LICENSE](https://github.com/sunasaji/VRChat_Friend_History/blob/master/LICENSE) ファイルを見てください。
+MIT License です。[LICENSE](https://github.com/sunasaji/VRChat_message_sender/blob/master/LICENSE) ファイルを見てください。

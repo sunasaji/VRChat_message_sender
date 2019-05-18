@@ -1,28 +1,26 @@
 # Introduction 
-This tool shows when your friends became your friend in VRChat, by using VRChat moderation API. Some friends might not be displayed. If you mute&unmute friends, the date and time would be used.
+Send text message to VRChat user in the game, by using VRChat message API.
 
-English | [Japanese](https://github.com/sunasaji/VRChat_Friend_History/blob/master/README-ja.md)
+English | [Japanese](https://github.com/sunasaji/VRChat_message_sender/blob/master/README-ja.md)
 
 # Getting Started
-1. Download zip file at [release](https://github.com/sunasaji/VRChat_Friend_History/releases) and extract it, or prepare Python 3.7.x and clone this repository.
+1. Download zip file at [release](https://github.com/sunasaji/VRChat_message_sender/releases) and extract it, or prepare Python 3.7.x and clone this repository.
 2. Edit credential.json to replace `USERNAME` for your VRChat user name, and replace `PASSWORD` for your VRChat password.
-3. Execute `VRChat_Friend_History.exe` file, or execute `VRChat_Friend_History.py` with Python.
-4. See generated file named `VRChat_Friend_History.txt`
-
-# Output file example
+3. Select address bar of the folder and type `cmd` and press enter key. Then command prompt will be opened.
+4. Check your friend's user id at [VRChat](https://vrchat.net). Open your friend page by clicking user icon at the right side, and see address bar. User id is the string starts with `usr_`, for example `usr_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+5. Execute `VRChat_message_sender USER_ID_OF_TARGET_USER "MESSAGE"`. Use checked user id for `USER_ID_OF_TARGET_USER` and fill message as you like in `MESSAGE`. Example:
 ```
-2018-05-11T17:53:08.648Z username_of_your_1st_friend_in_vrchat
-2018-05-11T18:24:14.295Z username_of_your_2nd_friend_in_vrchat
-...
+VRChat_message_sender usr_xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx "This is a test message"
 ```
 
 # Build
 In case you want to build the exe by yourself
 
-1. Execute `pip install requests`
-2. Execute `pip install pyinstaller`
-3. Execute `pyinstaller VRChat_Friend_History.py --onefile --noconsole`
-4. Find exe file in dist directory
+1. Install Python3.7.x
+2. Execute `pip install requests`
+3. Execute `pip install pyinstaller`
+4. Execute `pyinstaller VRChat_message_sender --onefile`
+5. Find exe file in dist directory
 
 # License
-These codes are licensed under MIT License. See [LICENSE](https://github.com/sunasaji/VRChat_Friend_History/blob/master/LICENSE) for details.
+These codes are licensed under MIT License. See [LICENSE](https://github.com/sunasaji/VRChat_message_sender/blob/master/LICENSE) for details.
