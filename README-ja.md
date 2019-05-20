@@ -3,6 +3,8 @@ VRChat内にテキストメッセージを送るためのツールです。VRCha
 
 [English](https://github.com/sunasaji/VRChat_message_sender/blob/master/README.md) | Japanese
 
+**注意: 本ツールは2019/5/21より動作しません。本ツールが使用している"message" APIエンドポイントがVRChat側で使用不可となっているためです。**
+
 # 使い方
 1. リリース [release](https://github.com/sunasaji/VRChat_message_sender/releases) からZIP をダウンロードして解凍するか Python3.7.x を入れてソースをダウンロードします。
 2. `credential.json` を開き `USERNAME` を自分の VRChat ユーザ名に置き換え, `PASSWORD` を自分の VRChat パスワードに置き換えます。
